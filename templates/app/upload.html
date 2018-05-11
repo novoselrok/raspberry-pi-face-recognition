@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Upload</h1>
+    <form action="{% url 'upload' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        Select images: <input type="file" name="img" multiple/>
+        <input type="submit"/>
+    </form>
+{% endblock %}

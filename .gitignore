@@ -1,0 +1,7 @@
+.idea/
+person_images/
+person_templates/
+db.sqlite3
+clf.pkl
+*.pyc
+app/__pycache__/
